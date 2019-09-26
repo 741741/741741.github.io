@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>动效练习</title>
+        <link href="css/base.css" rel="stylesheet" media="screen" type="text/css">
+        <link href="css/module.css" rel="stylesheet" type="text/css">
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+        <!-- 滑动导航 -->
+        <div class="nav">
+            <ul>
+                <li>  <a href="#paty1">按钮切换</a>  </li>
+                <li>  <a href="#paty2">波浪按钮特效</a>  </li>
+                <li>  <a href="#paty3">圆形进度条插件</a>  </li>
+                <li>  <a href="#paty4">canvas</a>  </li>
+                <li>  <a href="#paty5">3d 立方体旋转动画</a>  </li>
+                <li class="slider"></li>
+            </ul>
+        </div>
+        <div class="mouse"></div>
+
+        <!-- css3 播放暂停按钮切换 -->
+        <h1 class="htitle">css3 播放暂停按钮切换</h1>
+        <div class="paty1 section">
+            <div id="paty1" class="sebox"></div>
+            <div class="circular">
+                <div class="pause">
+                    <div class="line line_1"></div>
+                    <div class="line line_2"></div>
+                </div>
+                <div class="play active">
+                    <div class="line line_1"></div>
+                    <div class="line line_2"></div>
+                    <div class="line line_3"></div>
+                </div>
+            </div>
+        </div>
+        <!-- css3 播放暂停按钮切换 -->
+
+        <!-- css3 波浪按钮特效 -->
+        <h1 class="htitle">css3 波浪按钮特效</h1>
+        <div class="paty2 section" style="--bg-color: #2196f3;">
+            <div id="paty2" class="sebox"></div>
+            <div class="circle">
+                <div style="--color: #f44336"></div>
+                <div style="--color: #e91e63"></div>
+                <div style="--color: #9c27b0"></div>
+                <div style="--color: #9c27b0"></div>
+            </div>
+        </div>
+        <!-- css3 波浪按钮特效 -->
+
+        <!-- 圆形进度条插件 -->
+        <h1 class="htitle">圆形进度条插件</h1>
+        <div class="paty3 section">
+            <div id="paty3" class="sebox"></div>
+            <div class="example">
+                <div class="example-figure">
+                    <div class="progress progress-1"></div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="example-figure">
+                    <div class="progress progress-2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 圆形进度条插件 -->
+
+        <!-- canvas 学习 -->
+        <h1 class="htitle">canvas 学习</h1>
+        <div class="paty4 paty section">
+            <div id="paty4" class="sebox"></div>
+            <canvas width="400" height="400" id="can"></canvas>
+        </div>
+        <!-- canvas 学习 -->
+
+        <!-- 3d 立方体旋转动画 -->
+        <h1 class="htitle">3d 立方体旋转动画</h1>
+        <div class="paty5 paty section">
+            <div id="paty5" class="sebox"></div>
+            <div id="trans3DDemo1">
+                <div id="trans3DBoxes1">
+                    <div class="a1">Front</div>
+                    <div class="a2">Left</div>
+                    <div class="a3">Right</div>
+                    <div class="a4">Top</div>
+                    <div class="a5">Bottom</div>
+                    <div class="a6">Back</div>
+                </div>
+            </div>
+        </div>
+        <!-- 3d 立方体旋转动画 -->
+
+    </body>
+
+</html>
+<script type="text/javascript" src="js/circle-progress.js"></script>
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+
+<script>
+    new CircleProgress('.progress-1', {
+        max: 100,
+        value: 60,
+        textFormat: 'percent',
+    })
+    new CircleProgress('.progress-2', {
+        max: 100,
+        value: 60,
+    });
+</script>
